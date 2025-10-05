@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e6f0ff, #f9f9f9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 420px;
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  text-align: center;
+}
+
+/* Header */
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1d2b53;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Card */
+.card {
+  text-align: left;
+}
+
+.label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.currency-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  background: #fafafa;
+}
+
+.currency-select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.currency-select img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.currency-select select {
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.currency-box input {
+  border: none;
+  outline: none;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100px;
+  background: transparent;
+}
+.swap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.swap i {
+  rotate: 90deg;
+  font-size: 1.4rem;
+  color: #fff;
+  background: #2536d1;
+  padding: 12px;
+  border-radius: 50%;
+  transition: transform 0.6s ease, background 0.3s;
+}
+
+.cardFooter {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cardFooter p {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.cardFooter span {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #111;
+}
+/* Footer */
+footer.copyright {
+  margin: 20px 0 10px 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+}
+
+
+/* Responsive */
+@media (max-width: 500px) {
+  .currency-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .currency-box input {
+    width: 100%;
+    text-align: left;
+  }
+
+  .currency-select select {
+    font-size: 0.9rem;
+  }
+}
