@@ -28,34 +28,28 @@
         <div class="currency-box">
           <div class="currency-select">
             <img src="https://flagsapi.com/SG/flat/64.png" />
-            <select>
+            <select name="from">
               <option value="SGD">SGD</option>
-              <option value="USD">USD</option>
-              <option value="AUD">AUD</option>
-              <option value="CAD">CAD</option>
-              <option value="PKR">PKR</option>
             </select>
           </div>
-          <input type="number" value="1000.00" />
+          <input class="fromInput" type="number" value="1" />
         </div>
 
         <div class="swap">
-          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <button class="swapBtn">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          </button>
         </div>
 
         <label class="label">Converted Amount</label>
         <div class="currency-box">
           <div class="currency-select">
             <img src="https://flagsapi.com/US/flat/64.png" />
-            <select>
+            <select name="to">
               <option value="USD">USD</option>
-              <option value="SGD">SGD</option>
-              <option value="AUD">AUD</option>
-              <option value="CAD">CAD</option>
-              <option value="PKR">PKR</option>
             </select>
           </div>
-          <input type="number" value="736.70" />
+          <input class="toInput" type="number" value="0" />
         </div>
         <div class="cardFooter">
           <p>Indicative Exchange Rate</p>
@@ -66,5 +60,8 @@
     <footer class="copyright">
       <p>© 2025 All Rights Reserved | MH & Son's</p>
     </footer>
+
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

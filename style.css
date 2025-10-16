@@ -101,6 +101,13 @@ header p {
   margin: 12px 0;
 }
 
+.swap button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+
 .swap i {
   rotate: 90deg;
   font-size: 1.4rem;
