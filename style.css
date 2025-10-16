@@ -147,7 +147,11 @@ footer.copyright {
 
 
 /* Responsive */
-@media (max-width: 500px) {
+@media (max-width: 300px) {
+  body{
+    width: 80%;
+    height: 50vh;
+  }
   .currency-box {
     flex-direction: column;
     align-items: flex-start;
